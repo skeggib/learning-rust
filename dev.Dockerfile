@@ -22,3 +22,7 @@ run ln -s dotfiles/.inputrc .inputrc
 run ln -s dotfiles/.tmux.conf .tmux.conf
 run ln -s dotfiles/.tmux.conf.local .tmux.conf.local
 run ln -s dotfiles/.vimrc .vimrc
+
+# install rust and a linker
+run curl https://sh.rustup.rs -sSf | sh -s -- -y
+run apt install -y gcc
