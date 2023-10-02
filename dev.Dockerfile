@@ -1,7 +1,15 @@
 from ubuntu:latest
 
 run apt update
+run apt install -y curl
+run apt install -y gcc
 run apt install -y git
+run apt install -y htop
+run apt install -y less
+run apt install -y tmux
+run apt install -y tree
+run apt install -y vim
+run apt install -y wget
 
 # get and install dotfiles
 workdir /root
